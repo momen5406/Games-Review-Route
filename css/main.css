@@ -1,0 +1,115 @@
+:root {
+  --primary-font: "Audiowide", sans-serif;
+  --secondary-font: "Rubik", sans-serif;
+
+  --grey-color: #272B30;
+  --dark-blue-color: #3A497B;
+  --blue-color: #0C89BB;
+}
+
+body {
+  font-family: var(--secondary-font);
+  background-color: #27282B;
+}
+
+#loader {
+  background-color: #32383E;
+  z-index: 555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+}
+/* Start Header */
+header {
+  background-image: url("../img/wraper.png");
+  background-size: cover;
+  height: 230px;
+}
+/* End Header */
+
+/* Start Nav */
+nav {
+  background-color: var(--dark-blue-color) !important;
+  font-family: var(--primary-font);
+}
+
+nav img {
+  width: 40px;
+}
+
+.nav-link {
+  --bs-nav-link-color: white;
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  --bs-navbar-active-color: var(--blue-color) !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+  --bs-nav-link-hover-color: var(--blue-color) !important;
+}
+/* End Nav */
+
+/* Start Games Row */
+section .game .inner {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  filter: saturate(.3);
+  transition: .7s ease-in-out;
+  cursor: pointer;
+}
+
+section .game .inner:hover {
+  filter: saturate(1);
+  transform: scale(1.05);
+}
+
+section .game .inner .details h6 {
+  font-family: var(--primary-font);
+}
+
+section .game .inner .description {
+  text-align: center;
+  color: #66696C;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+section .game .inner .category {
+  border-top: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+section .game .inner .category span  {
+  background-color: #32383E !important;
+  font-size: .6875rem;
+}
+/* End Games Row */
+
+/* Start Details Section */
+.details i {
+  cursor: pointer;
+}
+
+.details h4,
+.details h5,
+.details h6 {
+  font-family: var(--primary-font);
+}
+
+.details h5 {
+  font-size: 1.75rem;
+}
+
+.details h6 {
+  font-size: 1rem;
+}
+
+.details h6 span {
+  font-size: .75rem;
+  background-color: #0DCAF0 !important;
+  color: black !important;
+  font-weight: 100;
+}
+/* Eend Details Section */
